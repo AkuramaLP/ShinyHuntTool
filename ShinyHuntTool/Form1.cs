@@ -20,7 +20,8 @@ namespace ShinyHuntTool
             InitializeComponent();
 
             //Start Function from all Methods
-            OTTF.startActionCounter();                          //Delete exsiting 
+            //OTTF.startActionCounter();                          //Delete exsiting 
+            OTTF.createNeededFolders();
             count.Start();                                                //Set countChain to 0
             programmStart();
         }
@@ -57,6 +58,11 @@ namespace ShinyHuntTool
         private void changeTextBox()
         {
             richTextBox1.Text = count.countChain.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OTTF.deleteAllData();
         }
 
         //private void inputCheck_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
