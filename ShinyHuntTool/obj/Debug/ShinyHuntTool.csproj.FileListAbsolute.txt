@@ -1,0 +1,9 @@
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\bin\Debug\ShinyHuntTool.exe.config
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.Form1.resources
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.Properties.Resources.resources
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.csproj.GenerateResource.Cache
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\bin\Debug\ShinyHuntTool.exe
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\bin\Debug\ShinyHuntTool.pdb
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.exe
+C:\Users\Jonathan.Witt\Desktop\VisualStudioProjekte\ShinyHuntTool\ShinyHuntTool\obj\Debug\ShinyHuntTool.pdb
