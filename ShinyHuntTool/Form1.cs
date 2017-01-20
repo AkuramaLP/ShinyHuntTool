@@ -12,12 +12,51 @@ namespace ShinyHuntTool
 {
     public partial class Form1 : Form
     {
-        OutputTextToFiles OTTF = new OutputTextToFiles();
+        OutputTextToFiles OTTF = new OutputTextToFiles();               //Load OutputTextToFiles Class
+        Counter count = new Counter();                                                   //L
 
         public Form1()
         {
             InitializeComponent();
-            OTTF.startActionCounter();
+
+            //Start Function from all Methods
+            OTTF.startActionCounter();                          //Delete exsiting 
+            count.Start();                                                //Set countChain to 0
+            programmStart();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            count.addToCounter();                                   //adds 1 to countChain
+            OTTF.writeCounterToFile();                          //Outputs countChain to file
+            changeTextBox();                                          //Updates Textbox
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            count.removeFromCounter();                         //Removes 1 from countChain
+            OTTF.writeCounterToFile();                          //Outputs countChain to file
+            changeTextBox();                                          //Updates Textbox
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void programmStart()
+        {
+            richTextBox1.Text = "0";
+        }
+
+        private void changeTextBox()
+        {
+            richTextBox1.Text = count.countChain.ToString();
         }
 
         //private void inputCheck_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)

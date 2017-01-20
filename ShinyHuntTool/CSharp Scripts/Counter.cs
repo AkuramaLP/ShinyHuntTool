@@ -10,8 +10,6 @@ namespace ShinyHuntTool
     {
         public int countChain;
 
-        OutputTextToFiles OTTF = new OutputTextToFiles();
-
         public void Start()
         {
             countChain = 0;
@@ -19,12 +17,12 @@ namespace ShinyHuntTool
 
         public void addToCounter()
         {
-
+            countChain++;
         }
 
         public void removeFromCounter()
         {
-
+            countChain--;
         }
     }
 }
