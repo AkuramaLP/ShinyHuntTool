@@ -9,35 +9,37 @@ namespace ShinyHuntTool
     class OutputTextToFiles
     {
         Counter count = new Counter();
-        private bool DEBUG = false;
+        public bool DEBUG = false;
 
         public void startActionCounter()
         {
             if(DEBUG == true)
             {
-                if (System.IO.File.Exists(@"C:\Users\Jonathan.Witt\Desktop\TEST\ShinyCounter.txt"))
+                if (System.IO.File.Exists(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt")))
                 {
                     try
                     {
-                        System.IO.File.Delete(@"C:\Users\Jonathan.Witt\Desktop\TEST\ShinyCounter.txt");
+                        System.IO.File.Delete(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"));
                     }
                     catch (System.IO.IOException e)
                     {
                         Console.WriteLine(e.Message);
+
+                        
                         return;
                     }
                 }
 
                 string textOutputToFile = count.countChain.ToString();
-                System.IO.File.WriteAllText(@"C:\Users\Jonathan.Witt\Desktop\TEST\ShinyCounter.txt", textOutputToFile);
+                System.IO.File.WriteAllText(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"), textOutputToFile);
             }
             else if(DEBUG == false)
             {
-                if (System.IO.File.Exists(@"C:\ShinyHuntTool\ShinyCounter.txt"))
+                if (System.IO.File.Exists(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt")))
                 {
                     try
                     {
-                        System.IO.File.Delete(@"C:\ShinyHuntTool\ShinyCounter.txt");
+                        System.IO.File.Delete(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"));
                     }
                     catch (System.IO.IOException e)
                     {
@@ -47,20 +49,20 @@ namespace ShinyHuntTool
                 }
 
                 string textOutputToFile = count.countChain.ToString();
-                System.IO.File.WriteAllText(@"C:\ShinyHuntTool\ShinyCounter.txt", textOutputToFile);
+                System.IO.File.WriteAllText(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"), textOutputToFile);
             }
         }
 
         public void writeCounterToFile()
         {
             string textOutputToFile = count.countChain.ToString();
-            System.IO.File.WriteAllText(@"C:\Users\Jonathan.Witt\Desktop\TEST\ShinyCounter.txt", textOutputToFile);
+            System.IO.File.WriteAllText(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"), textOutputToFile);
         }
 
         public void saveCounter()
         {
             string textOutputToFile = count.countChain.ToString();
-            System.IO.File.WriteAllText(@"C:\Users\Jonathan.Witt\Desktop\TEST\ShinyCounter.txt", textOutputToFile);
+            System.IO.File.WriteAllText(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt" ), textOutputToFile);
         }
 
         public void createNeededFolders()
@@ -79,11 +81,11 @@ namespace ShinyHuntTool
         {
             if(DEBUG == false)
             {
-                if(System.IO.Directory.Exists(@"C:\ShinyHuntTool"))
+                if(System.IO.Directory.Exists(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt")))
                 {
                     try
                     {
-                        System.IO.Directory.Delete(@"C:\ShinyHuntTool", true);
+                        System.IO.Directory.Delete(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test.txt"), true);
                     }
                     catch(System.IO.IOException e)
                     {
